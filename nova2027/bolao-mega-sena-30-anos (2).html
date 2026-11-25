@@ -1,0 +1,550 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Bolão Mega 2027</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Participe do bolão da Mega 2027, concurso especial. Entre no grupo do WhatsApp, escolha sua cota e pague via Pix.">
+<link id="fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@600;800;900&family=Manrope:wght@400;600;800&display=swap">
+<style id="pagestyle">
+/* Layout: página única, coluna central de 960px, hero em ouro sobre verde, seções empilhadas, barra fixa de CTA no celular */
+:root{
+  --bg:#04170e; --bg2:#08301f; --card:#0b2e1f; --card2:#0f3a27;
+  --line:rgba(232,190,92,.3); --gold1:#fbe9a0; --gold2:#e0b13c; --gold3:#8f6a17;
+  --ink:#f4efdc; --muted:#a8bfae; --wa:#2bd067; --wa2:#128a42; --on-gold:#06200f;
+  --font-display:'Cinzel',Georgia,serif; --font-num:'Bebas Neue','Arial Narrow',Impact,sans-serif; --font-body:'Manrope',system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:radial-gradient(120% 55% at 50% 0%,#0f4d2f 0%,rgba(15,77,47,0) 65%),radial-gradient(70% 40% at 95% 45%,rgba(224,177,60,.10),rgba(224,177,60,0) 70%),var(--bg);
+  color:var(--ink); font-family:var(--font-body); font-size:16px; line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 96px; min-height:100%;
+}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+#site{position:relative;z-index:1}
+.wrap{max-width:960px;margin-inline:auto}
+.sec{padding-block:44px}
+h1,h2,h3{margin:0;text-wrap:balance}
+.gold{background:linear-gradient(180deg,var(--gold1) 0%,var(--gold2) 55%,var(--gold3) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.sec-title{font-family:var(--font-display);font-weight:800;font-size:clamp(1.5rem,6vw,2.2rem);letter-spacing:.03em;text-align:center;text-transform:uppercase}
+.sec-sub{color:var(--muted);text-align:center;margin:10px auto 0;max-width:46ch}
+
+/* Hero */
+.hero{padding-top:max(28px,env(safe-area-inset-top,0px));padding-bottom:36px;text-align:center}
+.hero h1{display:flex;flex-direction:column;align-items:center;line-height:.95}
+.t1{font-family:var(--font-display);font-weight:900;font-size:clamp(2.2rem,11.5vw,4.6rem);letter-spacing:.04em}
+.t2{font-family:var(--font-display);font-weight:900;font-size:clamp(1.6rem,8vw,3.2rem);letter-spacing:.12em;display:flex;align-items:baseline;gap:.3em}
+.t2 b{font-family:var(--font-num);font-weight:400;font-size:2.5em;letter-spacing:.02em;line-height:.8}
+.ribbon{display:inline-flex;align-items:center;gap:14px;margin-top:18px;font-weight:800;letter-spacing:.28em;font-size:.82rem;color:var(--gold1)}
+.ribbon::before,.ribbon::after{content:"";width:clamp(24px,10vw,64px);height:1px;background:linear-gradient(90deg,transparent,var(--gold2))}
+.ribbon::after{transform:scaleX(-1)}
+.prize{font-family:var(--font-num);font-size:clamp(4rem,23vw,9.5rem);line-height:.9;margin-top:14px;letter-spacing:.01em;filter:drop-shadow(0 6px 24px rgba(224,177,60,.35))}
+.balls{display:flex;justify-content:center;gap:8px;margin-top:16px;flex-wrap:wrap}
+.ball{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-num);font-size:1.35rem;color:var(--gold1);background:radial-gradient(circle at 32% 28%,#2f9e63,#0b4a2b 62%,#05301c);border:1.5px solid var(--gold2);box-shadow:0 6px 14px rgba(0,0,0,.45),inset 0 -4px 8px rgba(0,0,0,.35);animation:bob 4.5s ease-in-out infinite}
+.ball:nth-child(2){animation-delay:-.7s}.ball:nth-child(3){animation-delay:-1.4s}.ball:nth-child(4){animation-delay:-2.1s}.ball:nth-child(5){animation-delay:-2.8s}.ball:nth-child(6){animation-delay:-3.5s}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.seal{display:inline-block;margin-top:20px;padding:9px 20px;border-radius:999px;border:2px solid var(--gold2);background:linear-gradient(180deg,#0f4a2e,#082e1c);color:var(--gold1);font-weight:800;letter-spacing:.1em;font-size:.88rem;transform:rotate(-2deg);box-shadow:0 0 0 4px rgba(224,177,60,.12),0 8px 22px rgba(0,0,0,.4)}
+.banner{margin:6px auto 0;max-width:720px;border-radius:18px;border:2px solid var(--gold2);overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.5),0 0 0 6px rgba(224,177,60,.1)}
+.banner img{display:block;width:100%;height:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.lead{margin-top:34px}
+.lead h2{font-family:var(--font-display);font-weight:800;font-size:clamp(1.4rem,6vw,2.1rem);color:var(--ink)}
+.lead p{color:var(--muted);margin:10px auto 22px;max-width:44ch}
+
+/* Buttons */
+.btn{display:flex;align-items:center;justify-content:center;gap:.65rem;width:100%;max-width:480px;margin-inline:auto;min-height:56px;padding:14px 22px;border-radius:14px;border:0;cursor:pointer;text-decoration:none;font:800 1rem/1.2 var(--font-body);letter-spacing:.05em;text-transform:uppercase}
+.btn:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,.linkbtn:focus-visible{outline:3px solid var(--gold1);outline-offset:3px}
+.btn-gold{background:linear-gradient(180deg,var(--gold1),var(--gold2) 58%,#b98a22);color:var(--on-gold);box-shadow:0 10px 30px rgba(224,177,60,.3),inset 0 1px 0 rgba(255,255,255,.55)}
+.btn-wa{min-height:72px;font-size:1.08rem;background:linear-gradient(180deg,var(--wa),var(--wa2));color:#fff;box-shadow:0 12px 30px rgba(18,138,66,.45),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-wa svg{width:34px;height:34px;flex:none}
+.btn-ghost{background:rgba(224,177,60,.06);color:var(--gold1);border:1.5px solid var(--gold2)}
+.btn:active{transform:translateY(1px)}
+.btn-row{display:grid;gap:12px;margin-top:20px}
+@media(min-width:640px){.btn-row{grid-template-columns:1fr 1fr}.btn-row .btn{max-width:none}}
+
+/* Steps */
+.steps{display:grid;gap:14px;margin-top:26px;padding:0;list-style:none}
+@media(min-width:720px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:22px 20px;display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:center}
+@media(min-width:720px){.step{grid-template-columns:1fr;text-align:center;justify-items:center}}
+.step .n{grid-row:span 2;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-num);font-size:1.9rem;color:var(--on-gold);background:linear-gradient(180deg,var(--gold1),var(--gold2));box-shadow:0 0 0 5px rgba(224,177,60,.15)}
+@media(min-width:720px){.step .n{grid-row:auto;margin-bottom:8px}}
+.step h3{font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:var(--gold1)}
+.step p{margin:0;color:var(--muted);font-size:.95rem}
+.steplink{display:block;width:fit-content;margin:12px 0 0;padding:11px 16px;border-radius:12px;background:linear-gradient(180deg,var(--gold1),var(--gold2) 58%,#b98a22);color:var(--on-gold);font-weight:800;font-size:.8rem;letter-spacing:.06em;text-decoration:none;border:0;cursor:pointer;font-family:var(--font-body);line-height:1.2}
+.steplink.wa{background:linear-gradient(180deg,var(--wa),var(--wa2));color:#fff}
+.steplink:focus-visible{outline:3px solid var(--gold1);outline-offset:3px}
+@media(min-width:720px){.steplink{margin-inline:auto}}
+
+/* WhatsApp */
+.wa-box{background:linear-gradient(160deg,#0d4a2c,#072a1a);border:1px solid var(--line);border-radius:24px;padding:28px 18px;text-align:center}
+.wa-box p{color:var(--muted);margin:0 auto 20px;max-width:42ch}
+
+/* Pix */
+.pix{background:linear-gradient(180deg,var(--card2),var(--card));border:2px solid var(--gold2);border-radius:24px;padding:26px 18px;box-shadow:0 0 0 7px rgba(224,177,60,.08),0 20px 50px rgba(0,0,0,.4)}
+.price{text-align:center;margin:16px 0 4px}
+.price small{display:block;color:var(--muted);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.75rem}
+.price strong{font-family:var(--font-num);font-weight:400;font-size:clamp(3rem,16vw,5rem);line-height:1}
+.rows{display:grid;gap:10px;margin:18px 0 0}
+.row{display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:space-between;align-items:baseline;padding:11px 14px;border-radius:12px;background:rgba(0,0,0,.22);border:1px solid rgba(224,177,60,.18)}
+.row span{color:var(--muted);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.row b{min-width:0;overflow-wrap:anywhere;font-weight:800}
+.row b.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:600;user-select:all;font-size:.95rem}
+.note{margin:16px 0 0;font-size:.88rem;color:var(--muted);text-align:center}
+
+/* Info */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:24px}
+.stat{padding:16px 14px;border-radius:16px;border:1px solid var(--line);background:rgba(0,0,0,.2)}
+.stat span{display:block;color:var(--muted);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.stat b{display:block;margin-top:4px;font-family:var(--font-num);font-weight:400;font-size:2rem;line-height:1.05;overflow-wrap:anywhere}
+.rules{margin:22px 0 0;padding:20px 18px 20px 18px;border-radius:18px;background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line)}
+.rules h3{font-family:var(--font-display);font-size:1.05rem;color:var(--gold1);margin-bottom:10px}
+.rules ul{margin:0;padding-left:1.2em;display:grid;gap:6px;color:var(--ink)}
+.rules li::marker{color:var(--gold2)}
+
+/* FAQ */
+.faq{display:grid;gap:10px;margin-top:24px}
+details{border:1px solid var(--line);border-radius:14px;background:rgba(0,0,0,.2);overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:16px 18px;font-weight:800;display:flex;justify-content:space-between;gap:14px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--font-num);font-size:1.8rem;line-height:1;color:var(--gold2);flex:none}
+details[open] summary::after{content:"–"}
+details[open]{background:rgba(224,177,60,.06)}
+.ans{padding:0 18px 18px;color:var(--muted);overflow-wrap:anywhere}
+
+/* Footer */
+.foot{padding-block:30px 10px;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+.foot p{margin:0 auto 14px;max-width:60ch}
+.linkbtn{background:none;border:0;color:var(--muted);opacity:.7;font:600 .72rem var(--font-body);letter-spacing:.2em;text-transform:uppercase;cursor:pointer;padding:12px 14px}
+.linkbtn:hover{opacity:1;color:var(--gold1)}
+
+/* Sticky bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:linear-gradient(180deg,rgba(4,23,14,0),rgba(4,23,14,.94) 40%);transform:translateY(120%);transition:transform .25s}
+.sticky.on{transform:none}
+.sticky .btn{min-height:54px}
+
+/* Overlay / modal / admin */
+.ov{position:fixed;inset:0;z-index:50;background:rgba(2,12,7,.82);display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.dlg{width:100%;max-width:460px;margin:auto;background:linear-gradient(180deg,var(--card2),var(--card));border:2px solid var(--gold2);border-radius:22px;padding:22px 18px;position:relative}
+.dlg.adm{max-width:680px;margin-block:0}
+.x{position:absolute;top:8px;right:8px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(0,0,0,.3);color:var(--gold1);font-size:1.5rem;cursor:pointer}
+.dlg h2{font-family:var(--font-display);font-size:1.25rem;padding-right:44px}
+.qr{margin:16px auto 0;width:min(260px,100%);background:#fff;border-radius:14px;padding:12px}
+.qr img{display:block;width:100%;height:auto;image-rendering:pixelated}
+.code{margin-top:14px;padding:12px;border-radius:12px;background:rgba(0,0,0,.3);border:1px dashed var(--gold2);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;overflow-wrap:anywhere;max-height:7.5em;overflow-y:auto;user-select:all}
+.dlg .btn{margin-top:14px;max-width:none}
+fieldset{border:1px solid var(--line);border-radius:14px;margin:18px 0 0;padding:14px;display:grid;gap:12px;min-width:0}
+legend{padding:0 8px;font-weight:800;color:var(--gold1);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}
+label{display:grid;gap:5px;font-weight:600;font-size:.88rem;min-width:0}
+input,textarea,select{width:100%;min-width:0;font:inherit;color:var(--ink);background:rgba(0,0,0,.35);border:1px solid rgba(224,177,60,.4);border-radius:10px;padding:11px 12px}
+textarea{min-height:92px;resize:vertical}
+.two{display:grid;gap:12px}
+@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
+.hint{font-weight:400;color:var(--muted);font-size:.8rem}
+.thumb{max-width:180px;max-height:140px;border-radius:10px;border:1px solid var(--line);background:#fff}
+.mini{padding:9px 14px;border-radius:10px;border:1px solid var(--gold2);background:transparent;color:var(--gold1);font:700 .85rem var(--font-body);cursor:pointer}
+.mini.danger{border-color:#d98a7a;color:#f2b8aa}
+.faqrow{display:grid;gap:8px;padding:12px;border-radius:12px;background:rgba(0,0,0,.2)}
+.stat-msg{margin-top:12px;font-weight:600;text-align:center;min-height:1.4em}
+.stat-msg.err{color:#f2b8aa}.stat-msg.ok{color:var(--wa)}
+.toast{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;background:var(--gold1);color:var(--on-gold);font-weight:800;padding:12px 20px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.5);max-width:calc(100vw - 32px);text-align:center}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ball{animation:none}.sticky{transition:none}}
+</style>
+
+<div id="app"></div>
+<script type="application/json" id="cfg">{"v":1,"waLink":"https://chat.whatsapp.com/DwcTPB5oRtL2aQatQVUIVm","formLink":"https://docs.google.com/forms/d/e/1FAIpQLScfnCepPzPGYik0eootgre3sYc-HbfNOPfV_zJTebzmqxHR7w/viewform?usp=preview","pixTipo":"Celular","pixChave":"021979199202","pixTitular":"Flávio Guedes","valorCota":"50,00","dataSorteio":"2026-12-31","prazoPagamento":"2026-12-21"}</script>
+<script id="main">
+/* Bolão Mega 2027
+ * Os dados do bolão ficam gravados dentro da própria página (bloco #cfg).
+ * Quem tem permissão de edição neste artifact usa o botão ADMINISTRADOR, altera os campos
+ * e publica uma nova versão. Todos os visitantes passam a ver a versão nova. */
+(function () {
+  "use strict";
+
+  var DEFAULTS = {
+    premio: "",
+    waLink: "https://chat.whatsapp.com/SEU_LINK_AQUI",
+    formLink: "",
+    pixTipo: "Chave aleatória",
+    pixChave: "SUA-CHAVE-PIX-AQUI",
+    pixTitular: "Nome do responsável",
+    pixCopiaCola: "",
+    qrImage: "",
+    banner: "",
+    valorCota: "",
+    totalCotas: "",
+    cotasDisponiveis: "",
+    participantes: "0",
+    concurso: "",
+    dataSorteio: "",
+    prazoPagamento: "",
+    regras: [
+      "A participação é confirmada somente após o pagamento da cota e a conferência do recebimento pelo organizador.",
+      "O pagamento deve ser feito até o prazo informado nesta página.",
+      "Apenas maiores de 18 anos podem participar.",
+      "Os jogos registrados serão divulgados no grupo do WhatsApp.",
+      "Havendo premiação, o valor é dividido igualmente entre as cotas confirmadas."
+    ].join("\n"),
+    faq: [
+      { q: "Como faço para participar?", a: "Entre no grupo oficial do WhatsApp, preencha o formulário, confira o valor da cota e as condições, faça o Pix para a chave informada e envie o comprovante." },
+      { q: "Qual é o valor da cota?", a: "Cada cota custa {valor}. O prazo para pagamento é {prazo}." },
+      { q: "Como envio meu comprovante?", a: "Depois de pagar, envie o comprovante no grupo do WhatsApp com seu nome completo. Sua cota só é confirmada depois que o organizador conferir o recebimento." },
+      { q: "Onde serão divulgados os números?", a: "Os jogos e o comprovante da aposta serão publicados no grupo do WhatsApp antes do sorteio de {sorteio}." },
+      { q: "Como será feita a divisão do prêmio?", a: "Havendo premiação, o valor será dividido igualmente entre as cotas pagas e confirmadas, conforme as regras do bolão. Não existe garantia de premiação." }
+    ]
+  };
+
+  var WA_PATH = "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z";
+  var WA_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="' + WA_PATH + '"/></svg>';
+
+  var app = document.getElementById("app");
+  var cfg = JSON.parse(JSON.stringify(DEFAULTS));
+  try {
+    var saved = JSON.parse(document.getElementById("cfg").textContent);
+    Object.keys(saved).forEach(function (k) { if (k in DEFAULTS) cfg[k] = saved[k]; });
+  } catch (e) {}
+
+  /* ---------- utilidades ---------- */
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function $(sel, root) { return (root || document).querySelector(sel); }
+  function money(v) {
+    var n = parseFloat(String(v).replace(/\./g, "").replace(",", "."));
+    if (!String(v).trim() || isNaN(n)) return "R$ XX,XX";
+    return n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  }
+  function dateBR(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || "");
+    return m ? m[3] + "/" + m[2] + "/" + m[1] : "A definir";
+  }
+  function orDash(v) { return String(v || "").trim() || "A definir"; }
+  function tokens(text) {
+    return esc(text)
+      .replace(/\{valor\}/g, esc(money(cfg.valorCota)))
+      .replace(/\{concurso\}/g, esc(orDash(cfg.concurso)))
+      .replace(/\{sorteio\}/g, esc(dateBR(cfg.dataSorteio)))
+      .replace(/\{prazo\}/g, esc(dateBR(cfg.prazoPagamento)))
+      .replace(/\n/g, "<br>");
+  }
+  function toast(msg) {
+    var t = $(".toast");
+    if (t) t.remove();
+    t = document.createElement("div");
+    t.className = "toast";
+    t.setAttribute("role", "status");
+    t.textContent = msg;
+    app.appendChild(t);
+    setTimeout(function () { t.remove(); }, 2600);
+  }
+  function copy(text, okMsg) {
+    function fallback() {
+      try {
+        var ta = document.createElement("textarea");
+        ta.value = text; ta.setAttribute("readonly", "");
+        ta.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+        document.body.appendChild(ta); ta.select();
+        var ok = document.execCommand("copy");
+        ta.remove();
+        toast(ok ? okMsg : "Toque e segure no texto para copiar");
+      } catch (e) { toast("Toque e segure no texto para copiar"); }
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { toast(okMsg); }, fallback);
+    } else { fallback(); }
+  }
+  function go(id) {
+    var el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+  }
+
+  /* ---------- página pública ---------- */
+  function render() {
+    var rules = String(cfg.regras || "").split("\n").map(function (s) { return s.trim(); }).filter(Boolean);
+    var premioTxt = String(cfg.premio || "").trim();
+    var premioAlt = premioTxt ? ", " + premioTxt : "";
+    var hero = cfg.banner
+      ? '<h1 class="sr">Mega 2027, concurso especial' + esc(premioAlt) + '</h1><div class="banner"><img src="' + esc(cfg.banner) + '" alt="Mega 2027, concurso especial' + esc(premioAlt) + '. Prêmio não acumula!"></div>'
+      : '<h1><span class="t1 gold">MEGA</span><span class="t2 gold"><b>2027</b></span></h1>' +
+        '<div class="ribbon">CONCURSO ESPECIAL</div>' +
+        (premioTxt ? '<div class="prize gold">' + esc(premioTxt) + '</div>' : '') +
+        '<div class="balls" aria-hidden="true"><span class="ball">06</span><span class="ball">14</span><span class="ball">27</span><span class="ball">33</span><span class="ball">48</span><span class="ball">59</span></div>' +
+        '<div class="seal">PRÊMIO NÃO ACUMULA!</div>';
+
+    var stats = [
+      ["Data do sorteio", dateBR(cfg.dataSorteio)],
+      ["Valor por cota", money(cfg.valorCota)],
+      ["Prazo para pagamento", dateBR(cfg.prazoPagamento)]
+    ].map(function (s) { return '<div class="stat"><span>' + s[0] + '</span><b class="gold">' + esc(s[1]) + '</b></div>'; }).join("");
+
+    var faq = (cfg.faq || []).map(function (f) {
+      return '<details><summary>' + esc(f.q) + '</summary><div class="ans">' + tokens(f.a) + '</div></details>';
+    }).join("");
+
+    app.innerHTML =
+      '<canvas id="fx" aria-hidden="true"></canvas>' +
+      '<div id="site">' +
+      '<header class="hero wrap" id="topo">' + hero +
+        '<div class="lead"><h2>Vamos juntos participar desse bolão!</h2>' +
+        '<p>Junte-se ao nosso grupo e participe dessa oportunidade especial.</p>' +
+        '<button class="btn btn-gold" id="cta-main" data-go="whatsapp" type="button">QUERO PARTICIPAR DO BOLÃO!</button></div>' +
+      '</header>' +
+
+      '<section class="sec wrap" id="como"><h2 class="sec-title gold">Como participar</h2>' +
+        '<p class="sec-sub">Três passos simples.</p>' +
+        '<ol class="steps">' +
+          '<li class="step"><span class="n">1</span><h3>Entre no grupo</h3><p>Acesse nosso grupo oficial no WhatsApp.<a class="steplink wa" href="' + esc(cfg.waLink) + '" target="_blank" rel="noopener noreferrer">ENTRAR NO GRUPO</a></p></li>' +
+          '<li class="step"><span class="n">2</span><h3>Preencha o formulário</h3><p>Preencha o formulário com seus dados e confira o valor da cota e as condições do bolão.' + (cfg.formLink ? '<a class="steplink" href="' + esc(cfg.formLink) + '" target="_blank" rel="noopener noreferrer">PREENCHER FORMULÁRIO</a>' : '') + '</p></li>' +
+          '<li class="step"><span class="n">3</span><h3>Faça o Pix</h3><p>Utilize a chave Pix disponibilizada pelo organizador e envie o comprovante conforme as instruções.<button class="steplink" type="button" data-go="pix">FAZER O PIX</button></p></li>' +
+        '</ol></section>' +
+
+      '<section class="sec wrap" id="whatsapp"><div class="wa-box">' +
+        '<h2 class="sec-title gold">Grupo oficial</h2>' +
+        '<p class="sec-sub" style="margin-bottom:20px">Os avisos, os jogos e as instruções ficam no grupo.</p>' +
+        '<a class="btn btn-wa" id="wa-btn" href="' + esc(cfg.waLink) + '" target="_blank" rel="noopener noreferrer">' + WA_SVG + '<span>ENTRAR NO GRUPO DO BOLÃO</span></a>' +
+      '</div></section>' +
+
+      '<section class="sec wrap" id="pix"><div class="pix">' +
+        '<h2 class="sec-title gold">Garanta sua participação!</h2>' +
+        '<div class="price"><small>Valor da cota</small><strong class="gold">' + esc(money(cfg.valorCota)) + '</strong></div>' +
+        '<div class="rows">' +
+          '<div class="row"><span>Responsável pelo recebimento</span><b>' + esc(cfg.pixTitular) + '</b></div>' +
+          '<div class="row"><span>Tipo de chave Pix</span><b>' + esc(cfg.pixTipo) + '</b></div>' +
+          '<div class="row"><span>Chave Pix</span><b class="mono">' + esc(cfg.pixChave) + '</b></div>' +
+        '</div>' +
+        '<div class="btn-row">' +
+          '<button class="btn btn-gold" type="button" data-act="copykey">COPIAR CHAVE PIX</button>' +
+          '<button class="btn btn-ghost" type="button" data-act="paypix">PAGAR COM PIX</button>' +
+        '</div>' +
+        '<p class="note">Depois de pagar, envie o comprovante no grupo. Sua participação só é confirmada quando o organizador conferir o recebimento.</p>' +
+      '</div></section>' +
+
+      '<section class="sec wrap" id="info"><h2 class="sec-title gold">Informações do bolão</h2>' +
+        '<div class="stats">' + stats + '</div>' +
+        '<div class="rules"><h3>Regras de participação</h3><ul>' + rules.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + '</ul></div>' +
+      '</section>' +
+
+      '<section class="sec wrap" id="faq"><h2 class="sec-title gold">Perguntas frequentes</h2><div class="faq">' + faq + '</div></section>' +
+
+      '<footer class="foot wrap"><p>Bolão organizado entre os participantes do grupo. Não existe garantia de premiação. Apenas para maiores de 18 anos. Jogue com responsabilidade.</p>' +
+        '<button class="linkbtn" type="button" data-act="admin">ADMINISTRADOR</button></footer>' +
+      '</div>' +
+      '<div class="sticky" id="sticky"><button class="btn btn-gold" type="button" data-go="whatsapp">QUERO PARTICIPAR DO BOLÃO!</button></div>' +
+      '<div id="overlay"></div>';
+
+    startFx();
+    watchSticky();
+  }
+
+  function watchSticky() {
+    var btn = $("#cta-main"), bar = $("#sticky");
+    if (!btn || !bar || !("IntersectionObserver" in window)) return;
+    new IntersectionObserver(function (en) { bar.classList.toggle("on", !en[0].isIntersecting && en[0].boundingClientRect.top < 0); }, { threshold: 0 }).observe(btn);
+  }
+
+  /* partículas douradas */
+  function startFx() {
+    var c = $("#fx"); if (!c) return;
+    var ctx = c.getContext("2d"), dpr = Math.min(window.devicePixelRatio || 1, 2), W = 0, H = 0, P = [];
+    var calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function size() { W = innerWidth; H = innerHeight; c.width = W * dpr; c.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+    size(); addEventListener("resize", size);
+    for (var i = 0; i < 46; i++) P.push({ x: Math.random(), y: Math.random(), r: .6 + Math.random() * 1.9, v: .03 + Math.random() * .08, a: .25 + Math.random() * .6, p: Math.random() * 6.28 });
+    function draw(t) {
+      ctx.clearRect(0, 0, W, H);
+      P.forEach(function (p) {
+        if (!calm) { p.y -= p.v / 60; if (p.y < -.02) { p.y = 1.02; p.x = Math.random(); } }
+        var tw = calm ? 1 : .6 + .4 * Math.sin(t / 700 + p.p);
+        var g = ctx.createRadialGradient(p.x * W, p.y * H, 0, p.x * W, p.y * H, p.r * 4);
+        g.addColorStop(0, "rgba(251,233,160," + (p.a * tw) + ")"); g.addColorStop(1, "rgba(224,177,60,0)");
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(p.x * W, p.y * H, p.r * 4, 0, 6.283); ctx.fill();
+      });
+      if (!calm) requestAnimationFrame(draw);
+    }
+    requestAnimationFrame(draw);
+  }
+
+  /* ---------- Pix ---------- */
+  function openPix() {
+    var qr = "";
+    if (cfg.qrImage) {
+      qr = '<div class="qr"><img src="' + esc(cfg.qrImage) + '" alt="QR Code Pix"></div>';
+    } else if (cfg.pixCopiaCola && window.qrcode) {
+      try {
+        var q = window.qrcode(0, "M"); q.addData(cfg.pixCopiaCola); q.make();
+        qr = '<div class="qr"><img src="' + q.createDataURL(6, 4) + '" alt="QR Code Pix gerado a partir do código Copia e Cola"></div>';
+      } catch (e) { qr = ""; }
+    }
+    var code = cfg.pixCopiaCola
+      ? '<div class="code" id="pix-code">' + esc(cfg.pixCopiaCola) + '</div><button class="btn btn-gold" type="button" data-act="copycode">COPIAR CÓDIGO PIX COPIA E COLA</button>'
+      : "";
+    var empty = (!qr && !code)
+      ? '<p class="note">O organizador ainda não cadastrou o QR Code. Use a chave Pix da página.</p><button class="btn btn-gold" type="button" data-act="copykey">COPIAR CHAVE PIX</button>' : "";
+    showOverlay('<div class="dlg" role="dialog" aria-modal="true" aria-label="Pagar com Pix"><button class="x" type="button" data-act="close" aria-label="Fechar">×</button>' +
+      '<h2 class="gold">Pagar com Pix</h2>' +
+      '<p class="note" style="text-align:left">Valor da cota: <b>' + esc(money(cfg.valorCota)) + '</b><br>Titular: ' + esc(cfg.pixTitular) + '</p>' +
+      qr + code + empty +
+      '<p class="note">O pagamento só é confirmado depois que o organizador verificar o recebimento. Envie o comprovante no grupo.</p></div>');
+  }
+
+  function showOverlay(html) {
+    var o = $("#overlay"); o.innerHTML = '<div class="ov" data-act="ovbg">' + html + '</div>';
+    document.body.style.overflow = "hidden";
+    var f = o.querySelector("button"); if (f) f.focus();
+  }
+  function closeOverlay() { $("#overlay").innerHTML = ""; document.body.style.overflow = ""; }
+
+  /* ---------- administrador ---------- */
+  var draft = null;
+
+  async function openAdmin() {
+    var user = null, art = null;
+    try { user = await claude.use("user"); art = await claude.use("artifact"); } catch (e) {}
+    var allowed = false;
+    try { allowed = !!(user && art && user.canEdit()); } catch (e) {}
+    if (!allowed) {
+      showOverlay('<div class="dlg" role="dialog" aria-modal="true" aria-label="Administrador"><button class="x" type="button" data-act="close" aria-label="Fechar">×</button>' +
+        '<h2 class="gold">Área do administrador</h2>' +
+        '<p class="note" style="text-align:left">Somente o organizador pode editar. Abra esta página logado na conta do Claude que criou o bolão (ou de alguém com permissão de edição) e toque em ADMINISTRADOR de novo.</p>' +
+        '<button class="btn btn-gold" type="button" data-act="close">ENTENDI</button></div>');
+      return;
+    }
+    draft = JSON.parse(JSON.stringify(cfg));
+    renderAdmin();
+  }
+
+  function f(id, label, val, extra) {
+    return '<label>' + label + '<input id="a-' + id + '" value="' + esc(val) + '" ' + (extra || "") + '></label>';
+  }
+  function renderAdmin() {
+    var faq = draft.faq.map(function (q, i) {
+      return '<div class="faqrow"><label>Pergunta<input id="fq-' + i + '" value="' + esc(q.q) + '"></label>' +
+        '<label>Resposta<textarea id="fa-' + i + '">' + esc(q.a) + '</textarea></label>' +
+        '<button class="mini danger" type="button" data-act="faqdel" data-i="' + i + '">Remover pergunta</button></div>';
+    }).join("");
+    var tipos = ["CPF", "CNPJ", "Celular", "E-mail", "Chave aleatória"].map(function (t) {
+      return '<option' + (t === draft.pixTipo ? " selected" : "") + '>' + t + '</option>';
+    }).join("");
+    showOverlay('<div class="dlg adm" role="dialog" aria-modal="true" aria-label="Painel do administrador"><button class="x" type="button" data-act="close" aria-label="Fechar">×</button>' +
+      '<h2 class="gold">Painel do administrador</h2>' +
+      '<p class="hint">Altere os campos e toque em Salvar e publicar. A página pública atualiza para todos.</p>' +
+      '<fieldset><legend>WhatsApp e formulário</legend>' + f("waLink", "Link do grupo", draft.waLink, 'type="url" inputmode="url" placeholder="https://chat.whatsapp.com/..."') + f("formLink", "Link do formulário (passo 2)", draft.formLink, 'type="url" inputmode="url" placeholder="https://docs.google.com/forms/..."') + '</fieldset>' +
+      '<fieldset><legend>Pix</legend><div class="two">' +
+        '<label>Tipo de chave<select id="a-pixTipo">' + tipos + '</select></label>' +
+        f("pixChave", "Chave Pix", draft.pixChave) + '</div>' +
+        f("pixTitular", "Nome do titular da chave", draft.pixTitular) +
+        '<label>Pix Copia e Cola<textarea id="a-pixCopiaCola" placeholder="00020126...">' + esc(draft.pixCopiaCola) + '</textarea><span class="hint">Se você não enviar uma imagem de QR Code, a página gera o QR a partir deste código.</span></label>' +
+        '<div><label>Imagem do QR Code Pix (opcional)<input id="a-qr" type="file" accept="image/*"></label>' +
+          (draft.qrImage ? '<p><img class="thumb" src="' + esc(draft.qrImage) + '" alt="QR atual"></p><button class="mini danger" type="button" data-act="qrdel">Remover imagem</button>' : "") + '</div>' +
+      '</fieldset>' +
+      '<fieldset><legend>Bolão</legend><div class="two">' +
+        f("valorCota", "Valor da cota (R$)", draft.valorCota, 'inputmode="decimal" placeholder="20,00"') +
+        f("premio", "Destaque do prêmio (opcional, deixe vazio para não mostrar)", draft.premio) +
+        f("dataSorteio", "Data do sorteio", draft.dataSorteio, 'type="date"') +
+        f("prazoPagamento", "Prazo de pagamento", draft.prazoPagamento, 'type="date"') +
+      '</div></fieldset>' +
+      '<fieldset><legend>Regras</legend><label>Uma regra por linha<textarea id="a-regras" style="min-height:150px">' + esc(draft.regras) + '</textarea></label></fieldset>' +
+      '<fieldset><legend>Imagem de capa</legend><label>Imagem do banner (opcional)<input id="a-banner" type="file" accept="image/*"></label>' +
+        '<span class="hint">Se enviar uma imagem, ela substitui o título desenhado no topo da página.</span>' +
+        (draft.banner ? '<p><img class="thumb" src="' + esc(draft.banner) + '" alt="Banner atual"></p><button class="mini danger" type="button" data-act="bandel">Remover imagem</button>' : "") + '</fieldset>' +
+      '<fieldset><legend>Perguntas frequentes</legend><p class="hint">Use {valor}, {prazo}, {sorteio} e {concurso} nas respostas para inserir os dados atuais.</p>' + faq +
+        '<button class="mini" type="button" data-act="faqadd">+ Adicionar pergunta</button></fieldset>' +
+      '<div class="btn-row"><button class="btn btn-gold" type="button" data-act="save">SALVAR E PUBLICAR</button><button class="btn btn-ghost" type="button" data-act="close">CANCELAR</button></div>' +
+      '<div class="stat-msg" id="msg" role="status"></div></div>');
+
+    var qin = $("#a-qr"), bin = $("#a-banner");
+    qin.addEventListener("change", function () { pickImage(qin.files[0], 700, "image/png", 1, function (u) { collect(); draft.qrImage = u; renderAdmin(); }); });
+    bin.addEventListener("change", function () { pickImage(bin.files[0], 1400, "image/jpeg", .85, function (u) { collect(); draft.banner = u; renderAdmin(); }); });
+  }
+
+  function pickImage(file, max, type, q, done) {
+    if (!file) return;
+    var r = new FileReader();
+    r.onload = function () {
+      var img = new Image();
+      img.onload = function () {
+        var s = Math.min(1, max / Math.max(img.width, img.height));
+        var c = document.createElement("canvas");
+        c.width = Math.round(img.width * s); c.height = Math.round(img.height * s);
+        var x = c.getContext("2d");
+        if (type === "image/jpeg") { x.fillStyle = "#fff"; x.fillRect(0, 0, c.width, c.height); }
+        x.drawImage(img, 0, 0, c.width, c.height);
+        done(c.toDataURL(type, q));
+      };
+      img.onerror = function () { var m = $("#msg"); if (m) { m.className = "stat-msg err"; m.textContent = "Não foi possível ler essa imagem."; } };
+      img.src = r.result;
+    };
+    r.readAsDataURL(file);
+  }
+
+  function collect() {
+    ["waLink", "formLink", "pixTipo", "pixChave", "pixTitular", "pixCopiaCola", "valorCota", "concurso", "totalCotas", "cotasDisponiveis", "participantes", "premio", "dataSorteio", "prazoPagamento", "regras"].forEach(function (k) {
+      var el = document.getElementById("a-" + k); if (el) draft[k] = el.value.trim();
+    });
+    draft.faq = draft.faq.map(function (q, i) {
+      var a = document.getElementById("fq-" + i), b = document.getElementById("fa-" + i);
+      return { q: a ? a.value : q.q, a: b ? b.value : q.a };
+    });
+  }
+
+  function buildDoc(c) {
+    var head = "";
+    var styles = document.head ? Array.prototype.slice.call(document.head.querySelectorAll("style")) : [];
+    var base = styles.filter(function (s) { return s.id !== "pagestyle"; })[0];
+    var reset = base ? base.textContent : ":root{color-scheme:light}body{margin:0}";
+    function out(sel) { var el = document.querySelector(sel); return el ? el.outerHTML : ""; }
+    var json = JSON.stringify(c).replace(/</g, "\\u003c");
+    var main = document.getElementById("main").textContent;
+    head = '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>' + reset + '</style></head><body>';
+    return head + out("title") + out('meta[name="claude:viewport-fit-sides"]') + out('meta[name="description"]') + out("#fonts") + out("#pagestyle") +
+      '<div id="app"></div><script type="application/json" id="cfg">' + json + '<\/script><script id="main">' + main + '<\/script><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"><\/script></body></html>';
+  }
+
+  async function save() {
+    var msg = $("#msg");
+    function say(t, k) { msg.className = "stat-msg " + (k || ""); msg.textContent = t; }
+    collect();
+    if (draft.waLink && !/^https:\/\/(chat\.whatsapp\.com|wa\.me)\//i.test(draft.waLink)) { say("O link do WhatsApp deve começar com https://chat.whatsapp.com/", "err"); return; }
+    if (draft.formLink && !/^https:\/\//i.test(draft.formLink)) { say("O link do formulário deve começar com https://", "err"); return; }
+    if (draft.pixCopiaCola && !/^000201/.test(draft.pixCopiaCola)) { say("O Pix Copia e Cola precisa começar com 000201. Copie o código completo do seu banco.", "err"); return; }
+    draft.faq = draft.faq.filter(function (q) { return q.q.trim(); });
+    say("Publicando...");
+    try {
+      var art = await claude.use("artifact");
+      await art.publish(buildDoc(draft));
+      say("Salvo! A página está sendo atualizada.", "ok");
+    } catch (e) {
+      var code = e && e.code;
+      if (code === "conflict") say("Outra alteração foi publicada antes. A página vai recarregar com a versão mais recente. Refaça sua edição.", "err");
+      else if (code === "not_writer" || code === "not_granted") say("Sua conta não tem permissão para editar esta página.", "err");
+      else say("Não foi possível publicar. Tente de novo em instantes.", "err");
+    }
+  }
+
+  /* ---------- eventos ---------- */
+  app.addEventListener("click", function (ev) {
+    var t = ev.target.closest("[data-go],[data-act]"); if (!t) return;
+    if (t.dataset.go) { go(t.dataset.go); return; }
+    var a = t.dataset.act;
+    if (a === "ovbg") { if (ev.target === t) closeOverlay(); return; }
+    if (a === "copykey") copy(cfg.pixChave, "Chave Pix copiada!");
+    else if (a === "copycode") copy(cfg.pixCopiaCola, "Código Pix copiado!");
+    else if (a === "paypix") openPix();
+    else if (a === "close") closeOverlay();
+    else if (a === "admin") openAdmin();
+    else if (a === "save") save();
+    else if (a === "faqadd") { collect(); draft.faq.push({ q: "", a: "" }); renderAdmin(); }
+    else if (a === "faqdel") { collect(); draft.faq.splice(+t.dataset.i, 1); renderAdmin(); }
+    else if (a === "qrdel") { collect(); draft.qrImage = ""; renderAdmin(); }
+    else if (a === "bandel") { collect(); draft.banner = ""; renderAdmin(); }
+  });
+  document.addEventListener("keydown", function (ev) { if (ev.key === "Escape" && $("#overlay") && $("#overlay").innerHTML) closeOverlay(); });
+
+  render();
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+
+</body></html>
